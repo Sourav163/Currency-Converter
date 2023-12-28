@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logoDiv"><a href="/" id="logo">MyCurrConv.</a></div>
+        <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="containerHead">
+            <h1>: Choose a Currency to Convert :</h1>
+        </div>
+        <form action="/action.php" method="get">
+            <select name="currency">
+                <option value="INR">Rupee</option>
+                <option value="USD">Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <input type="number" name="value">
+            <input type="submit" value="Convert" id="convert" />
+        </form>
+    </div>
+
+    <div id="output">
+        <table>
+            <caption>: Converted Currency Values :</caption>
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Currency Code</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- From JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

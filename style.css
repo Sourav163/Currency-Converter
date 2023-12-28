@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(255, 230, 255);
+}
+
+.active {
+    color: brown;
+}
+
+nav {
+    background-color: rgb(255, 175, 255);
+    box-shadow: 0 10px 20px rgba(255, 115, 255, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 3%;
+}
+
+#logo {
+    background-color: aqua;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    box-shadow: inset 1px 1px 5px brown, inset -1px -1px 5px brown;
+}
+
+nav div {
+    transition: 0.2s ease;
+}
+
+nav div:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li {
+    margin: 0 20px;
+    transition: 0.2s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: brown;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.containerHead h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+form select,
+form input {
+    border: 2px solid black;
+    outline: none;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#convert {
+    background-color: aqua;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#convert:hover {
+    border: 2px solid rgb(0, 150, 150);
+    background-color: white;
+    transform: scale(1.05);
+}
+
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    display: none;
+}
+
+#output table {
+    background-color: white;
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 0 3%;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+#output table caption {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#output table th {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 465px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #logoDiv {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .containerHead h1 {
+        font-size: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form select,
+    form input {
+        margin: 10px 10px;
+    }
+
+    #output table caption {
+        font-size: 25px;
+    }
+
+    #output table th {
+        font-size: 15px;
+    }
+}
+
+.aboutMain {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutMission {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.about {
+    background-color: white;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+.mission {
+    background-color: white;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+.about h2,
+.mission h2 {
+    margin-bottom: 20px;
+}
+
+.keyChoose {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.key {
+    background-color: white;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+.choose {
+    background-color: white;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+.key h2,
+.choose h2 {
+    margin-bottom: 20px;
+}
+
+.about:hover,
+.mission:hover,
+.key:hover,
+.choose:hover {
+    transform: scale(1.05);
+    box-shadow: inset 2px 2px 5px rgba(165, 42, 42, 0.5), inset -2px -2px 5px rgba(165, 42, 42, 0.5);
+}
+
+@media (max-width: 889px) {
+
+    .about,
+    .key {
+        margin-bottom: 30px;
+    }
+
+    .aboutMain {
+        margin: 100px 5%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .about,
+    .mission,
+    .key,
+    .choose {
+        font-size: 14px;
+    }
+}
+
+.contactMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    margin: 100px 8% 0;
+    text-align: center;
+}
